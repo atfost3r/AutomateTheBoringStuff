@@ -11,4 +11,4 @@ def collatz(number):
 
 n = input("Give me a number: ")
 while n != 1:
-    n = collatz(int(n)
+   n = collatz(int(n))
