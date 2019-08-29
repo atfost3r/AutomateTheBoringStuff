@@ -8,3 +8,5 @@ for character in message:
     count[character] = count[character] +1
 
 pprint.pprint(count)
+
+#This was written not dictated by Alex Foster
