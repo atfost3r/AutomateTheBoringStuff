@@ -11,6 +11,16 @@ numRegex = re.compile(r'[0-9]')
 
 #TODO: Get password
 password = str(pyperclip.paste())
+strong = [0,0,0]
+
+# TODO: Check that password is strong
+if len(password) >= 8:
+    if alphaRegex.findall(password) == []:
+
+        print(password)
+
+
+else:
 
 
 
@@ -20,9 +30,10 @@ password = str(pyperclip.paste())
 
 
 
-# TODO: Check that password is strong
 
+#TDOD: Tell the user that their password sucks or not
 
+print('This is one strong password')
 
 
 
