@@ -10,10 +10,11 @@ alphaCapitalRegex = re.compile(r'[A-Z]')
 numRegex = re.compile(r'[0-9]')
 
 #Get password
+#TODO: Possibly add an option to type in the password
 password = str(pyperclip.paste())
 strong = [False,False,False]           #This set up a test where as each criteria is met, the value will be flipped to True
 
-# TODO: Check that password is strong
+#Check that password is strong
 if len(password) >= 8:
     if alphaRegex.findall(password) != []:   #Test for lowercase letters
         strong[0] = True
@@ -36,6 +37,6 @@ else:
 
 #Tell the user that their password sucks or not
 if all(strong) == True:
-    print('This is one strong password')
+    print('This is one strong password!')
 else:
     print('Your password does not meet the above criteria.')
