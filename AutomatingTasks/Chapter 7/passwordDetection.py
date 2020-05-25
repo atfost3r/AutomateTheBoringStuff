@@ -32,11 +32,6 @@ else:
 
 
 #TDOD: Tell the user that their password sucks or not
-
 print('This is one strong password')
-
-
-
-
 
 #TODO: Tell User if the password is indeed strong
