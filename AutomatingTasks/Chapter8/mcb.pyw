@@ -1,4 +1,4 @@
-#! pyhton3
+#! python3
 # mcb.pyw - saves and loads pieces of text to the clipboard
 # Usage: py.exe mcb.pyw save <keyword> - saves clipboard to keyword.
 #        py.exe mcb.pyw <keyword> - Loads keyword to clipboard.
@@ -18,4 +18,4 @@ elif len(sys.argv) == 2:
     elif sys.argv[1] in mcbShelf:
         pyperclip.copy(mcbShelf[sys.argv[1]])
 
-mcbShelf = shelve.close()
+mcbShelf.close()
