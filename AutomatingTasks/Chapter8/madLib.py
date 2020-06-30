@@ -12,7 +12,14 @@ madLibFile = open('madLib.txt', 'w')  #Open the file to save to.
 
 
 
+
 #TODO: Get the words from the user
+
+adjective = input('Enter an Adjective:')
+noun1 = input('Enter a Noun:')
+verb = input('Enter a Verb:')
+noun2 = input('Enter another Noun:')
+
 
 #TODO: Add in user words
 
