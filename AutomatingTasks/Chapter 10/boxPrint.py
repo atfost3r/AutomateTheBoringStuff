@@ -1,4 +1,4 @@
-#! python3
+#!python3
 
 def boxPrint(symbol,width,height):
     if len(symbol) != 1:
@@ -9,4 +9,11 @@ def boxPrint(symbol,width,height):
         raise Exception('Height must be greater than 2.')
     print(symbol * width)
     for i in range(height - 2):
-        print()
+        print(symbol + (''* (width - 2)) + symbol)
+    print(symbol * width)
+
+    for sym, w, h, in (('*', 4,4), ('0', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
+        try:
+            boxPrint(sym, w, h)
+        except Exception as err:
+            print('An exception happened:' + str(err) )
