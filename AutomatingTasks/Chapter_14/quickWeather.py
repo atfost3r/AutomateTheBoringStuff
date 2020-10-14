@@ -9,6 +9,7 @@ if len(sys.argv) < 2:
     sys.exit()
 location = ''.join(sys.argv[1:])
 
+#TODO: Need to add in the API Key
 #Download the JSON data from OpenWeatherMap.org's API
 url = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=%s&cnt=3' % (location)
 response = requests.get(url)
